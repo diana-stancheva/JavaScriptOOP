@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JS OOP</title>
+    <script src="script.js"></script>
+    <style>
+        canvas {
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas">
+        Your browser does not support canvas!
+    </canvas>
+    <script>
+        var canvas = new Shape('#canvas');
+
+        canvas.drawCircle(20,20,10);
+        canvas.drawRect(30, 80, 50, 55);
+        canvas.drawLine(80, 50, 150, 50);
+    </script>
+</body>
+</html>
