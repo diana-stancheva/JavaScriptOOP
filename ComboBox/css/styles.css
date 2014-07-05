@@ -1,0 +1,39 @@
+html * {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+#combo-box {
+	margin: 20px;
+	width: 300px;
+
+}
+
+#combo-input {
+	width: 290px;
+	padding: 5px;
+}
+
+#combo-container .person-item {
+	border: 1px solid black;
+	margin: 10px 0;
+	background: #fff;
+	display: none;
+}
+
+#combo-container .person-item:first-of-type {
+	display: block;
+}
+
+#combo-container .person-item .inner-cotainer{
+	display: inline-block;
+	vertical-align: top;
+	height: 133px;
+	overflow: hidden;
+	margin: 3px;
+}
