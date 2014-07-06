@@ -26,6 +26,14 @@ body {
 	display: none;
 }
 
+#combo-container .person-item:hover {
+	border:2px solid #666;
+}
+
+#combo-container .person-item.selected {
+	border:2px solid #666;
+}
+
 #combo-container .person-item:first-of-type {
 	display: block;
 }

@@ -2,8 +2,7 @@ define(function () {
 
     function ComboBox(collection) {
         this.collection = collection || [];
-        this._collapsed = true;
-    };
+    }
 
     ComboBox.prototype.render = function (template) {
         var self = this;
@@ -12,17 +11,8 @@ define(function () {
         var compileTemplate = Handlebars.compile(template);
 
         $('#combo-box').on('click', '.person-item', function () {
-            var $this = $(this);
-            $('#combo-input').val('')
-
-            if (!self._collapsed) {
-                self._collapsed = true;
-                $this.parent().find('.person-item').hide();
-                $this.show();
-            } else {
-                $this.parent().find('.person-item').show();
-                self._collapsed = false;
-            }
+            $('#combo-input').val('');
+            $(this).addClass('selected').show().siblings().removeClass('selected').slideToggle('fast');
         });
 
         $('#combo-box').on('keyup', '#combo-input', function (event) {
